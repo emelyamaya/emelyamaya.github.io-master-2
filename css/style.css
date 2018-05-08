@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  background-image: url("../images/paper1.png");
+}
+
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+  padding: 20px;
+}
+
+
+/* links */
+a,
+a:visited {
+  color: #888;
+}
+
+
+a:hover,
+a:active {
+  color: rgb(212, 116, 40);
+}
+
+nav a{
+  filter:grayscale(1);
+  transition filter: 0.5s ease-in;
+}
+
+nav a:hover{
+  filter: grayscale(1);
+  transition filter: 0.5s ease-in;
+}
+
+
+
+/* headings */
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 72px;
+  color: #222;
+  color: rgb(212, 116, 40);
+  text-transform: lowercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0px;
+}
+
+
+
+/* structural */
+
+address {
+  font-style: normal;
+}
+
+li{
+  list-style-type: square;
+}
+
+nav {
+  font-family: 'Playfair Display', serif;
+  background-color: rgb(212, 116, 40);
+  width: 100%;
+  margin-top: 5px;
+}
+
+nav ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0px;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+  padding-right: 100px;
+}
+
+nav a,
+nav a:visited {
+  display: inline-block;
+  color: #eee;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #eee;
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  margin-top: 20px;
+}
+
+img {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+
+
+
+/* ids */
+
+
+#emely {
+  color: rgb(7, 23, 40);
+  display: inline-block;
+}
+
+#amaya {
+  color:rgb(212, 116, 40);
+  display: inline-block;
+}
+
+#resume article {
+  margin-top: 30px;
+}
+
+#design main {
+  grid-template-columns: 1fr 310px;
+}
+
+#inspiration main {
+  grid-template-columns: 1fr 300px;
+}
+
+#inspiration img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1);
+  transition: filter 0.3s ease-in;
+}
+
+#inspiration img:hover{
+  filter: grayscale(0);
+  transition: filter 0.3s ease-in;
+}
+
+#inspiration p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#inspiration .right {
+  float: right;
+}
+
+#contact {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#education {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#skills {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#experience {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+}
+
+
+
+
+
+
+/*
+  CSS grid scaffolding provided by Erin Brown.
+  http://github.com/umiami-web-design/grid-templates
+*/
